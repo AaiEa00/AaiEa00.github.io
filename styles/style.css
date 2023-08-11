@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    background-color: #C7FEFE;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    /* 要素の外側の周りの空間 */
+    margin: 0;
+    /* コンテンツの周囲のスペース */
+    padding: 20px 0;
+    color: #C7FEFE;
+    text-shadow: 3px 2px 2px #000000;
+}
+
+p,
+li {
+    font-size: 20px;
+    /* 行間 */
+    line-height: 2;
+    /* 文字間 */
+    letter-spacing: 1px;
+}
+
+body {
+    /* bodyの幅 */
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fcffff;
+    padding: 0 20px 20px 20px;
+    /* paddingのすぐ外側にある実線 */
+    border: 5px solid black;
+}
+
+img {
+    /* 画像にブロックレベルの動作を指定する */
+    display: block;
+    margin: 0 auto;
+}
