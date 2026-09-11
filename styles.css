@@ -20,7 +20,7 @@ body {
     margin: 0;
     color: var(--text-navy);
     background-color: var(--white);
-    font-family: sans-serif;
+    font-family: "Zen Maru Gothic", sans-serif;
 }
 
 a {
@@ -50,6 +50,11 @@ header {
     justify-content: space-between;
 
     padding: 20px 48px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
 }
 
 header nav ul {
@@ -113,4 +118,8 @@ footer {
     padding: 48px;
     background-color: var(--text-navy);
     color: var(--white);
+}
+
+.effect {
+    font-family: "Caveat", sans-serif;
 }

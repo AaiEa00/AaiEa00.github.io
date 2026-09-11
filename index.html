@@ -8,17 +8,31 @@
 
     <meta name="description" content="スシドンのポートフォリオサイトです。" />
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- ヘッダー -->
     <header>
-      <div>
-        <a href="#">
-          <span>スシドン</span>
-          <span>Portfolio</span>
-        </a>
-      </div>
+      <a href="#">
+        <div>
+          <p>スシドン<br />Portfolio</p>
+          <p>🍣</p>
+        </div>
+      </a>
 
       <nav>
         <ul>
@@ -38,11 +52,13 @@
           <span>かたちに。</span>
         </h1>
         <p>
-          フルスタックエンジニアを目指して、日々精進！
+          フルスタックエンジニアを目指して、日々精進！<br />
           どちらかといえばバックエンドに興味があります。
         </p>
-        <a href="#about">私について</a>
-        <a href="#works">制作物を見る</a>
+        <div>
+          <a href="#about">私について</a>
+          <a href="#works">制作物を見る</a>
+        </div>
       </section>
 
       <section id="about">
@@ -79,7 +95,7 @@
       <section id="skills">
         <h2>Skills</h2>
         <p>できること・勉強中のこと</p>
-        <p>Still learning...!</p>
+        <p class="effect">Still learning...!</p>
 
         <article>
           <h3>HTML</h3>
@@ -188,7 +204,7 @@
         </li>
       </ul>
 
-      <p>Thank you for visiting!</p>
+      <p class="effect">Thank you for visiting!</p>
       <small>© 2026 スシドン</small>
     </footer>
   </body>
