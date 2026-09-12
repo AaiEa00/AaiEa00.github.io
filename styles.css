@@ -62,6 +62,11 @@ header nav ul {
     gap: 32px;
 }
 
+.header-list:hover {
+    color: var(--main-blue);
+    text-decoration: underline;
+}
+
 #home {
     min-height: 600px;
     display: flex;
@@ -122,4 +127,8 @@ footer {
 
 .effect {
     font-family: "Caveat", sans-serif;
+}
+
+.my-button {
+    border-radius: 20px;
 }
