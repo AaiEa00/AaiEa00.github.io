@@ -83,6 +83,19 @@ header nav ul {
     display: block;
 }
 
+.home-move {
+    margin: 8px auto;
+    display: flex;
+    gap: 36px;
+}
+
+#about {
+    background-color: var(--light-gray);
+    margin: 12px;
+    border-radius: 20px;
+    padding: 12px;
+}
+
 #about dl {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -91,6 +104,9 @@ header nav ul {
 
 #skills {
     background-color: var(--light-blue);
+    margin: 12px;
+    border-radius: 20px;
+    padding: 12px;
 }
 
 #skills article {
@@ -101,6 +117,9 @@ header nav ul {
 
 #works {
     background-color: var(--light-pink);
+    margin: 12px;
+    border-radius: 20px;
+    padding: 12px;
 }
 
 #works article {
@@ -111,6 +130,9 @@ header nav ul {
 
 #favorites {
     background-color: var(--light-cyan);
+    margin: 12px;
+    border-radius: 20px;
+    padding: 12px;
 }
 
 #favorites ul {
@@ -130,5 +152,13 @@ footer {
 }
 
 .my-button {
-    border-radius: 20px;
+    background-color: var(--white);
+    border-radius: 40px;
+    border: 1px solid var(--main-blue);
+    padding: 12px;
+}
+
+.my-button:hover {
+    background-color: var(--main-blue);
+    color: var(--white);
 }
