@@ -102,6 +102,10 @@ header nav ul {
     gap: 16px;
 }
 
+dt {
+    float: left;
+}
+
 #skills {
     background-color: var(--light-blue);
     margin: 12px;
@@ -147,8 +151,47 @@ footer {
     color: var(--white);
 }
 
+.skills-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+}
+
 .effect {
     font-family: "Caveat", sans-serif;
+    text-align: right;
+    transform: rotate(-10deg);
+}
+
+.effect::before {
+    content: "\\";
+    margin-right: 6px;
+}
+
+.effect::after {
+    content: "/";
+    margin-left: 6px;
+}
+
+.skill-list {
+    display: flex;
+    gap: 24px;
+
+    overflow-x: auto;
+    padding-bottom: 12px;
+
+    scroll-snap-type: x proximity;
+    align-items: stretch;
+}
+
+.skill-list article {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 20px;
 }
 
 .my-button {
