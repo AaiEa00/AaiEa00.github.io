@@ -126,29 +126,10 @@ dt {
     padding: 12px;
 }
 
-#works article {
-    padding: 24px;
-    border-radius: 20px;
-    background-color: var(--light-gray);
-}
-
 .work-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-}
-
-.work-list article {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    border-radius: 20px;
-    background-color: var(--white);
-}
-
-.work-list article .my-button {
-    margin-top: auto;
-    align-self: flex-start;
 }
 
 .work-tech {
@@ -157,6 +138,32 @@ dt {
     border-radius: 999px;
     background-color: var(--light-blue);
     font-size: 14px;
+}
+
+.work-card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+
+    padding: 24px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.work-card img {
+    width: 45%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.work-content {
+    flex: 1;
+}
+
+.work-content .my-button {
+    margin-top: auto;
 }
 
 #favorites {
