@@ -132,6 +132,33 @@ dt {
     background-color: var(--light-gray);
 }
 
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.work-list article {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.work-list article .my-button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.work-tech {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background-color: var(--light-blue);
+    font-size: 14px;
+}
+
 #favorites {
     background-color: var(--light-cyan);
     margin: 12px;
