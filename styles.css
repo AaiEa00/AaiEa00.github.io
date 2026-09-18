@@ -44,6 +44,10 @@ section > * {
     margin-right: auto;
 }
 
+section h2 {
+    margin-top: 0;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -93,7 +97,7 @@ header nav ul {
     background-color: var(--light-gray);
     margin: 12px;
     border-radius: 20px;
-    padding: 12px;
+    padding: 24px;
 }
 
 #about dl {
@@ -110,7 +114,7 @@ dt {
     background-color: var(--light-blue);
     margin: 12px;
     border-radius: 20px;
-    padding: 12px;
+    padding: 24px;
 }
 
 #skills article {
@@ -123,7 +127,7 @@ dt {
     background-color: var(--light-pink);
     margin: 12px;
     border-radius: 20px;
-    padding: 12px;
+    padding: 24px;
 }
 
 .work-list {
@@ -188,13 +192,41 @@ dt {
     background-color: var(--light-cyan);
     margin: 12px;
     border-radius: 20px;
-    padding: 12px;
+    padding: 24px;
 }
 
 #favorites ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 24px;
+}
+
+#favorites li {
+    text-align: center;
+}
+
+.favorite-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--main-blue);
+    font-size: 30px;
+}
+
+#favorites li h3 {
+    margin: 0 0 4px;
+    font-size: 14px;
+}
+
+#favorites li p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
 }
 
 footer {
