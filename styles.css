@@ -307,3 +307,149 @@ footer > small {
     background-color: var(--deep-blue);
     color: var(--white);
 }
+
+@media (max-width: 768px) {
+    /* ナビゲーションは表示したまま、画面幅に合わせて折り返す */
+    header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    header nav,
+    footer nav {
+        width: 100%;
+    }
+
+    header nav ul,
+    footer nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 16px;
+    }
+
+    header nav a,
+    footer nav a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
+
+    /* 各セクションの余白を揃える */
+    section {
+        padding: 48px 20px;
+    }
+
+    #about,
+    #skills,
+    #works,
+    #favorites {
+        margin: 12px;
+        padding: 20px;
+    }
+
+    #home {
+        min-height: 440px;
+    }
+
+    #home h1 {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+
+    #home > p {
+        line-height: 1.8;
+    }
+
+    .home-move {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* AboutとWorksは1列にする */
+    #about dl,
+    .work-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #about dl > div {
+        display: grid;
+        grid-template-columns: 6em minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    #about dt {
+        float: none;
+    }
+
+    #about dd {
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+    /* Skillsのカードは画面内に収め、一覧だけ横スクロールさせる */
+    .skills-heading {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .skills-heading .effect {
+        align-self: flex-end;
+        margin: 0 0 20px;
+    }
+
+    .skill-list {
+        gap: 16px;
+    }
+
+    .skill-list article {
+        flex-basis: min(280px, 100%);
+    }
+
+    .work-card {
+        padding: 20px;
+        gap: 12px;
+        min-width: 0;
+    }
+
+    /* 画像を追加したときも、左側の配置を維持する */
+    .work-card img {
+        width: 30%;
+        flex-shrink: 0;
+    }
+
+    .work-content {
+        overflow-wrap: anywhere;
+    }
+
+    #favorites ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 16px;
+    }
+
+    #favorites li {
+        overflow-wrap: anywhere;
+    }
+
+    /* フッターは縦にまとめ、リンク同士は横並びにする */
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 32px 20px;
+        text-align: center;
+    }
+
+    footer .site-logo {
+        align-items: center;
+    }
+
+    footer .effect {
+        margin: 8px 0;
+    }
+
+    footer > small {
+        flex-basis: auto;
+        width: 100%;
+    }
+}
