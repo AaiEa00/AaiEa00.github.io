@@ -303,17 +303,53 @@ footer > small {
     padding: 12px;
 }
 
-.my-button:hover {
+.my-button:hover,
+.menu-button:hover {
     background-color: var(--deep-blue);
     color: var(--white);
+}
+
+.menu-button {
+    display: none;
 }
 
 @media (max-width: 768px) {
     /* ナビゲーションは表示したまま、画面幅に合わせて折り返す */
     header {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 16px;
         padding: 20px;
+    }
+
+    .menu-button {
+        display: inline-block;
+        padding: 12px 16px;
+        border: 1px solid var(--main-blue);
+        border-radius: 8px;
+        background-color: var(--white);
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+    }
+
+    #header-menu {
+        display: none;
+        width: 100%;
+    }
+
+    #header-menu.is-open {
+        display: block;
+    }
+
+    #header-menu ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #header-menu a {
+        display: flex;
+        justify-content: center;
     }
 
     header nav,
@@ -334,6 +370,8 @@ footer > small {
         align-items: center;
         min-height: 44px;
     }
+
+
 
     /* 各セクションの余白を揃える */
     section {
