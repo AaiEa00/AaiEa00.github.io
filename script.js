@@ -29,10 +29,13 @@ function closeMenu() {
 
 }
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", updateBackToTop);
+window.addEventListener("pageshow", updateBackToTop);
+
+function updateBackToTop() {
     if (window.scrollY > 300) {
         backToTop.classList.add("is-visible");
     } else {
         backToTop.classList.remove("is-visible");
-    }
-});
+    }    
+}
