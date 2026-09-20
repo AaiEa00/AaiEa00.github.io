@@ -334,6 +334,12 @@ footer > small {
     visibility: visible;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--text-navy);
+    outline-offset: 4px;
+}
+
 @media (max-width: 768px) {
     /* ナビゲーションは表示したまま、画面幅に合わせて折り返す */
     header {
