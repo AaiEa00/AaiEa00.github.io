@@ -313,6 +313,27 @@ footer > small {
     display: none;
 }
 
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--deep-blue);
+    color: var(--white);
+    visibility: hidden;
+}
+
+.back-to-top.is-visible {
+    visibility: visible;
+}
+
 @media (max-width: 768px) {
     /* ナビゲーションは表示したまま、画面幅に合わせて折り返す */
     header {
